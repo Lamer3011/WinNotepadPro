@@ -1,0 +1,21 @@
+﻿<Window x:Class="WinNotepadPro.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WinNotepadPro"
+        mc:Ignorable="d"
+        Title="About" Height="290" Width="398" MinWidth="172" MinHeight="366">
+    <Grid>
+        <TextBlock x:Name="textBlock" Text="A program that can replace the standard Windows Notepad. This program aims to improve the functionality that the notebook lacked." 
+                   TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16"/>
+
+        <Label x:Name="label" Content="Running by" HorizontalAlignment="Left" 
+               Margin="0,196,0,0" VerticalAlignment="Top" FontSize="16"/>
+
+        <Label x:Name="name_comp" Content="User" HorizontalAlignment="Left" 
+               Margin="84,196,0,0" VerticalAlignment="Top" FontSize="16" />
+        <Label x:Name="label1" Content="Created by Sergiy Kireev" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="16" Margin="0,0,0,22"/>
+        <Label x:Name="label2" Content="all rights reserved©" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="16"/>
+    </Grid>
+</Window>

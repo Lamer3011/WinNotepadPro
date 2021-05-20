@@ -1,0 +1,43 @@
+﻿<Window x:Class="WinNotepadPro.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WinNotepadPro"
+        Title="Untitled - WinNotepad+" Height="477" Width="617" FontSize="16">
+    <Window.Resources>
+        
+    </Window.Resources>
+
+    <Grid>
+        <Menu VerticalAlignment="Top" x:Name="menu" Height="20">
+            <!--FILE MENU-->
+            <MenuItem Header="File">
+                <MenuItem x:Name="new_file"  Header="New" Click="new_file_Click" />
+                <MenuItem x:Name="open_file" Header="Open" Click="open_file_Click" />
+                <MenuItem x:Name="save_file" Header="Save as" Click="save_file_Click"/> 
+                <Separator />
+                <MenuItem Header="Exit" Click="MenuItem_Click" />
+            </MenuItem>
+            <!--VIEW MENU-->
+            <MenuItem Header="View">
+                <MenuItem Header="Theme">
+                    <MenuItem x:Name="light_theme" Header="Light ✔" Click="light_theme_Click" ></MenuItem>
+                    <MenuItem x:Name="dark_theme" Header="Dark" Click="dark_theme_Click" ></MenuItem>
+                    <MenuItem x:Name="hacker_theme" Header="Hacker" Click="hacker_theme_Click" ></MenuItem>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem x:Name="win_about" Header="About" Click="win_about_Click"  />
+        </Menu>
+        <ScrollViewer 
+            ScrollViewer.HorizontalScrollBarVisibility="Auto" 
+            ScrollViewer.VerticalScrollBarVisibility="Auto" 
+            Margin="0,20,0,0">
+            <!--TEXTBLOCK-->
+            <TextBox x:Name="main_editor" AcceptsReturn="True" 
+                     BorderThickness="0,1,0,0" 
+                     Background="#FFD9CCCC" 
+                     PreviewMouseWheel="main_editor_PreviewMouseWheel" />
+        </ScrollViewer>
+    </Grid>
+</Window>
